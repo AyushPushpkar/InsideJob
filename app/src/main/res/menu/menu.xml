@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/feature"
+        android:title="Features"
+        android:icon="@drawable/baseline_notes_24"
+        android:iconTint="#03A9F4"
+        />
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/outline_app_settings_alt_24"
+        android:iconTint="#03A9F4"/>
+
+    <item
+        android:id="@+id/login"
+        android:title="Login"
+        android:icon="@drawable/baseline_add_reaction_24"
+        android:iconTint="#03A9F4"/>
+
+
+</menu>

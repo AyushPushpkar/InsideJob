@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeaturesActivity">
+
+    <LinearLayout
+        android:id="@+id/toplinear2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/top_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/features"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Features"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customtoast"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:padding="15dp"
+        android:text="Custom toast"
+        android:background="@drawable/backback"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/sweetalert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplinear2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sweetalert"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:padding="15dp"
+        android:text="Sweet Alert"
+        android:background="@drawable/backback"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/customtoast"
+        app:layout_constraintTop_toTopOf="@+id/customtoast" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Motiontoast"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/backback"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:text="Motion toast"
+        app:layout_constraintEnd_toStartOf="@id/Bundlepassing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customtoast" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Bundlepassing"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:padding="15dp"
+        android:background="@drawable/backback"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:text="Bundle Passing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Motiontoast"
+        app:layout_constraintTop_toBottomOf="@+id/sweetalert" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loading"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/backback"
+        android:text="Loading"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/Motiontoast"
+        app:layout_constraintStart_toStartOf="@+id/Motiontoast"
+        app:layout_constraintTop_toBottomOf="@+id/Motiontoast" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/alertbox"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backback"
+        android:text="Alert box"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/loading"
+        app:layout_constraintEnd_toEndOf="@+id/Bundlepassing"
+        app:layout_constraintTop_toTopOf="@+id/loading"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/share"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/backback"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/loading"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loading"
+        app:layout_constraintTop_toBottomOf="@+id/loading" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fancytoast"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/backback"
+        android:text="Fancy toast"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/alertbox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/alertbox"
+        app:layout_constraintTop_toBottomOf="@+id/alertbox" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadpic"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/backback"
+        android:text="Upload Photo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/share"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/share"
+        app:layout_constraintTop_toBottomOf="@+id/share" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/video"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/backback"
+        android:text="Video upload"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fancytoast"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fancytoast"
+        app:layout_constraintTop_toBottomOf="@+id/fancytoast" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
