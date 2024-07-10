@@ -35,6 +35,8 @@
         android:hint="Update Content"
         android:inputType="textMultiLine"
         android:minLines="4"
+        android:textColor="@color/white"
+        android:textColorHint="#B2FFFFFF"
         android:scrollbars="vertical"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="@+id/updatetitle"

@@ -78,7 +78,7 @@ class FeaturesActivity : AppCompatActivity() {
                 MotionToastStyle.ERROR,
                 MotionToast.GRAVITY_BOTTOM,
                 MotionToast.LONG_DURATION,
-                ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helvetica_regular)
+                ResourcesCompat.getFont(this,www.sanju.motiontoast.R.font.helvetica_regular)
             )
 
 //            MotionToast.createToast(this,
