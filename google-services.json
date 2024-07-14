@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "firebase_url": "https://insidejob-76b28-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "project_number": "530854978089",
+    "project_id": "insidejob-76b28",
+    "storage_bucket": "insidejob-76b28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530854978089:android:a87de49d2c65b8340fb238",
+        "android_client_info": {
+          "package_name": "com.example.insidejob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7L_fHm7zyu9A5We12bbnTXYE0wWnC7Hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

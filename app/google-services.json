@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659122043798",
+    "project_id": "insidejob-17c62",
+    "storage_bucket": "insidejob-17c62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659122043798:android:c18b382430e57cf8c47bb7",
+        "android_client_info": {
+          "package_name": "com.example.insidejob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj24MhMS3gwUQ2hGV4-piiuVXLFnZ9ruE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
