@@ -1,32 +1,25 @@
 package com.example.insidejob
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
-import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insidejob.databinding.ActivityMainBinding
 import com.example.insidejob.databinding.NoteupdateBinding
-import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.database
-import com.google.firebase.database.getValue
-
 
 
 
@@ -50,6 +43,9 @@ class MainActivity : AppCompatActivity() , NoteAdapter.OnItemClickListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // Set the status bar color
+        window.statusBarColor = Color.parseColor("#03A9F4")
 
         itemClickListener = this@MainActivity // Assigning the correct context
 
@@ -177,7 +173,4 @@ class MainActivity : AppCompatActivity() , NoteAdapter.OnItemClickListener {
             }
     }
 
-    private fun enableEdgeToEdge(){
-
-    }
 }
